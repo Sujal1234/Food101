@@ -1,9 +1,9 @@
-import gdown
+# import gdown
 
-url = 'https://drive.google.com/file/d/1ZGEnLM7KD0DrzsR1Cj_0-2PIrFB2uYdj/view?usp=sharing'
-output = "MobileNetV2Tuned.keras"
+# url = 'https://drive.google.com/file/d/1ZGEnLM7KD0DrzsR1Cj_0-2PIrFB2uYdj/view?usp=sharing'
+# output = "MobileNetV2Tuned.keras"
 
-gdown.download(url, output, quiet=False)
+# gdown.download(url, output, quiet=False)
 
 import streamlit as st
 from tensorflow import keras
