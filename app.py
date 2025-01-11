@@ -27,7 +27,7 @@ def predict(image_file, model):
   confidence = np.max(prediction) * 100
   return (confidence, predicted_class)
 
-saved_model = keras.models.load_model("models/MobileNetV2Tuned.keras")
+saved_model = keras.models.load_model("MobileNetV2Tuned.keras")
 
 st.title('Upload an Indian food image')
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
