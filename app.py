@@ -35,4 +35,4 @@ uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "pn
 if uploaded_image is not None:
     conf, pred = predict(uploaded_image, saved_model)
 
-    st.write(f"I am {confidence:.2f}% sure that this is {predicted_class}.")
+    st.write(f"I am {conf:.2f}% sure that this is {pred}.")
